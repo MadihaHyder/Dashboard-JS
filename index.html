@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" 
+    integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="navigation">
+            <ul>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-sun" style="color: yellow;"></i></span>
+                        <span class="title" style="color: orange; font-size: 23px;">RisingSun Ltd & Co<span style="color: red; font-size: 23px; font-weight:bolder ;">.</span></span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-house"></i></span>
+                        <span class="title">Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-user"></i></span>
+                        <span class="title">Customers</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-comment"></i></span>
+                        <span class="title">Messages</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-circle-info"></i></span>
+                        <span class="title">Help</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-gear"></i></span>
+                        <span class="title">Settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-lock"></i></span>
+                        <span class="title">Password</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <span class="icon"><i class="fa-solid fa-arrow-right-from-bracket"></i></span>
+                        <span class="title">Sign out</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <div>
+        <div class="main">
+            <div class="topbar">
+                <div class="toggle">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class="search">
+                    <label>
+                        <input type="text" placeholder="Search here">
+                        <i class="fa-solid fa-magnifying-glass"></i> 
+                    </label>
+                </div>
+                <div class="user">
+                    <img src="user.jpg" alt="#">
+                </div>
+            </div>
+
+            <div class="cardbox">
+                <div class="card">
+                    <div>
+                        <div id="number1" class="number">500</div>
+                        <div class="cardName">Products Sold</div>   
+                    </div>
+                    <div class="icon">
+                        <i class="fa fa-briefcase"></i>
+                    </div>
+                </div>
+                <div class="card">
+                    <div>
+                        <div id="number2" class="number">89</div>
+                        <div class="cardName">Happy Clients</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-face-smile"></i>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div>
+                        <div id="number3" class="number">2200</div>
+                        <div class="cardName">Savings</div> 
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-coins"></i>
+                    </div>
+                </div> 
+                <div class="card">
+                    <div>
+                        <div id="number1" class="number">285</div>
+                        <div class="cardName">Comments</div>
+                    </div>
+                    <div class="icon">
+                        <i class="fa-solid fa-comments"></i>
+                    </div>
+                </div>     
+            </div>
+
+            <div class="details">
+                <div class="recentOrders">
+                    <div class="cardHeaders">
+                        <h2>Recent orders</h2>
+                        <a href="#" class="btn">View all</a>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <td>Name</td>
+                                <td>Price</td>
+                                <td>Payment</td>
+                                <td>Status</td>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Star Refrigerator</td>
+                                <td>€1220</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Window Coolers</td>
+                                <td>€100</td>
+                                <td>Due</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Speakers</td>
+                                <td>€620</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>HP Laptop</td>
+                                <td>€220</td>
+                                <td>Due</td>
+                                <td><span class="status in progree">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Apple Watch</td>
+                                <td>€1200</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Wall fan</td>
+                                <td>€80</td>
+                                <td>Paid</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>Denim Shirts</td>
+                                <td>€1350</td>
+                                <td>Due</td>
+                                <td><span class="status in progress">In Progress</span></td>
+                            </tr>
+                            <tr>
+                                <td>Adidas Shoes</td>
+                                <td>€1500</td>
+                                <td>Paid</td>
+                                <td><span class="status return">Return</span></td>
+                            </tr>
+                            <tr>
+                                <td>Samsung TV</td>
+                                <td>€3400</td>
+                                <td>Paid</td>
+                                <td><span class="status delivered">Delivered</span></td>
+                            </tr>
+                            <tr>
+                                <td>Amazon Alexa</td>
+                                <td>€500</td>
+                                <td>Due</td>
+                                <td><span class="status in progress">In Progress</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <div class="container">
+                    <div class="chart">
+                        <canvas id="barchart" width="300" height="300"></canvas>
+                    </div>
+                    <div class="chart">
+                        <canvas id="doughnut" width="300" height="300"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+<script>
+
+// Menubar togglr or collapse
+let toggle = document.querySelector('.toggle');
+let navigation = document.querySelector('.navigation');
+let main = document.querySelector('.main');
+toggle.onclick= function(){
+    navigation.classList.toggle('active');
+    main.classList.toggle('active')
+}
+
+//adding hovered class in selected list item
+const list= document.querySelectorAll('.navigation li');
+function activeLink()
+{
+    list.forEach((item)=> 
+    item.classList.remove('hovered'));
+    this.classList.add('hovered');
+}
+    list.forEach((item)=>
+    item.addEventListener('mouseover',activeLink));
+
+//statistics
+let project = setInterval(projectDone, 10)
+let clients = setInterval(happyClients, 10)
+let coffee = setInterval(cupsCoffee, .2)
+let comment= setInterval(comments, 10)
+let count1 = 0;
+let count2 = 0;
+let count3 = 0;
+let count4 = 0;
+
+function projectDone() {
+    count1++
+    document.querySelector("#number1").innerHTML = count1
+    if (count1 == 500) {
+        clearInterval(project)
+    }
+}
+
+function happyClients() {
+    count2++
+    document.querySelector("#number2").innerHTML = count2
+    if (count2 == 89) {
+        clearInterval(clients)
+    }
+}
+
+function cupsCoffee() {
+    count3++
+    document.querySelector("#number3").innerHTML = count3
+    if (count3 == 2547) {
+        clearInterval(coffee)
+    }
+    } 
+function comments() {
+    count4++
+    document.querySelector("#number4").innerHTML = count4
+    if (count4 == 285) {
+        clearInterval(comment)
+    }
+    }
+    
+    
+//chartjs- bar chart
+const ctx = document.getElementById('barchart');
+
+new Chart(ctx, {
+  type: 'bar',
+  data: {
+    labels: ['January', 'February', 'March', 'April', 'May', 'June'],
+    datasets: [{
+      label: 'Earnings €',
+      data: [5000, 7439, 5897, 10480, 9320, 12090],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+//chartjs - doughnut
+const ctx2 = document.getElementById('doughnut');
+
+new Chart(ctx2, {
+  type: 'doughnut',
+  data: {
+    labels: ['MediaMarkt', 'Amazon', 'Idealo', 'Otto', 'Ebay', 'Zalando'],
+    datasets: [{
+      label: 'Products sold',
+      data: [120, 195, 38, 55, 62, 30],
+      borderWidth: 1
+    }]
+  },
+  options: {
+    scales: {
+      y: {
+        beginAtZero: true
+      }
+    }
+  }
+});
+
+</script>
+</body>
+</html>
